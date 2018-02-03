@@ -1,0 +1,42 @@
+/* 1.模拟select下拉框 */
+/* 2.三角形 */
+/* [实例]1.模拟select下拉框 */
+.selectBox {
+  position: relative;
+  width: 100px;
+  text-align: center;
+}
+.selectBox .select {
+  position: relative;
+  border: 1px solid #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.selectBox .select-triangle {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.selectBox .subBox {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #000000;
+  border-top-width: 0;
+  background-color: #fff;
+}
+.selectBox .select-triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  overflow: hidden;
+  border-width: 5px 2.5px 0 2.5px;
+  border-color: #000000 transparent transparent transparent;
+}
